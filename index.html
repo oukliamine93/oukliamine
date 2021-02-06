@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">    <!--font-family: 'Rubik', sans-serif;-->
+    <title>Mon portfolio en css</title>
+</head>
+<body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v9.0'
+        });
+      };
+
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+      attribution="setup_tool"
+      page_id="1396467620407474"
+theme_color="#ff7e29"
+logged_in_greeting="hey me revoilà j’espère que vous allez bien ?"
+logged_out_greeting="hey me revoilà j’espère que vous allez bien ?">
+    </div>
+    <header>
+        <!--debut de la barre de navigation-->
+        <nav>
+            <ul class="onglets">
+             <li><a href="#accueil"></a>accueil</li>
+             <li><a href="#àpropos"></a>à propos</li>
+             <li><a href="#travail"></a>travail</li>
+             <li><a href="#contact"></a>Contact</li>
+            </ul>
+        </nav>
+        
+        <!--fin de la barre de navigation-->
+    </header>
+    <main>
+        <section class="accueil" >
+            <div class="titre">
+                <h1>Mon portfolio</h1>
+                <h6>oukli amine</h6>
+            </div>
+        </section>
+        <section class="àpropos">
+           <h1 id="àpropos"></h1>
+             <div class="img1">
+             <img src="./img/image2.jpg" width="600px" height="800px" alt="photo de amine">
+            </div>
+            <div class="cv">
+             <h1>à propos</h1>
+             <p> <strong>amine oukli</strong><br>
+                Villa 86, Coopérative les IRIS, KOUBA, ALGER, (ALGERIE) 16050 <br>
+                oukliamine02@gmail.com <br>
+                (+213)552-59-70-80 <br>
+              </p>
+                <hr>
+                <ul>
+                   <p><i>COMPÉTENCES</i></p><br>
+                    <br>        
+                    <li>Autonome, organisé, professionnel, polyvalent et efficace.</li> 
+                    <li>Atteint régulièrement ses objectifs et dispose des capacités décisionnelles.</li> 
+                    <li>Bon sens d'écoute et de communication.</li> 
+                    <li>Bon sens d’analyse et d'observation dans la gestion de projets.</li> Bon sens d’analyse et d'observation dans la gestion de projets.
+                    <li>Bonne maitrise de l'outil informatique (PC Compta, Outlook, Office, Adobe)</li>       
+                </ul>
+                <hr>
+                      <p> <i> ÉTUDE ET DIPLÔMES </i></p> 
+                    <ul>
+                        <li>
+                            2016 - 2019 MBA en management de projet 
+                        </li>
+                        <li>
+                            2014 - 2016 Master en Marché financier et banques 
+                        </li>
+                        <li>
+                            2011 - 2014 Licence en Finance & Comptabilité
+                        </li>
+                    </ul> 
+                    </pre>
+             </div>
+         </section>  
+         <section class="travail">
+            <h1 id="travail"></h1>
+            <div class="video12">
+           <div class="video1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5ZM0Lh7s5xc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+           <div class="video2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HzC_EZwiAgg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+            </div>
+            <div class="video34">
+           <div class="video3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AUK8hN7BPAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>           
+            </div>
+           <div class="video4">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/91iga96d4GM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+           </div>
+        </div>
+        </section>   
+         <section class="contact">
+             <div class="contactpartie1">
+             <h1 id="contact"></h1>
+             
+                <img src="./img/logo contact.png" alt="logo contact" width="30%" height="30%">
+                
+                   <p> <strong>oukliamine02@gmail.com / 0552 59 70 80 </strong> </p>
+               
+           
+            <div class="contactpartie2">
+             <form action="/action_page.php;"style="text-align:center;">
+                <label for="fname">Prenom:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Nom:</label><br>
+                <input type="text" id="lname" name="lname"><br><br>
+                <label for="comment">comment:</label><br>
+                <textarea name="text" id="comment" cols="30" rows="10"></textarea><br>
+                <input type="submit" value="Submit">
+              </form> 
+             </div>
+         </section>   
+    </main>
+    <footer>
+        <section class="reseaux">
+            <ul>
+                <li><a href="https://www.facebook.com/amine.oukli.56">Facebook</a></li>
+                <li><a href="https://www.instagram.com/oukli_amine/?hl=en">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/checkpoint/lg/login-submit?_l=fr_FR">LinkeDin</a></li>
+            </ul>
+            <p>© 2020</p>
+         </section>
+
+    </footer>     
+</body>
+</html>
